@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "about": "About us",
+    "whatWeDo": "What we do?",
+    "withWho": "With who?",
+    "workWithUs": "Work with us",
+    "services": "Services",
+    "contact": "Contact",
+    "activities": "Activities"
+  },
+  "footer": {
+    "europeOffices": "Europe Offices",
+    "europeAddress": "Av. Mare de Deu de Bellvitge - 3, 08907 L’Hospitalet de Llobregat- Barcelona, Spain",
+    "latamOffices": "Latin America Offices",
+    "latamAddress": "Urb. San José de Tarbes - BOD Tower, Floor 16 Valencia, Venezuela",
+    "workWithUs": "Work with us",
+    "workWithUsLink": "Find out how",
+    "instagram": "Visit us",
+    "contact": "Contact us",
+    "rights": "All rights reserved"
+  },
+  "whatWeDo": {
+    "title": "WHAT WE DO?",
+    "learnMore": "Learn more"
+  },
+  "withWho": {
+    "title": "What we did?",
+    "duration": "Project duration",
+    "team": "Dedicated team",
+    "portfolio": "Download a sample from our digital portfolio",
+    "portfolioButton": "Download portfolio"
+  },
+  "services": {
+    "title": "Services and Pricing",
+    "request": "Request"
+  },
+  "form": {
+    "nameLabel": "Name and surname",
+    "nameErrorMessage": "Name and surname are required",
+    "emailLabel": "Email",
+    "emailErrorMessage": "Email is required",
+    "emailPatternErrorMessage": "Please enter a valid email",
+    "termsAndConditions": "He leído los términos y condiciones",
+    "termsAndConditionsErrorMessage": "You must read the terms and conditions and check the box to continue",
+    "submit": "Send"
+  },
+  "workWithUs": {
+    "applyForm": {
+      "title": "Apply to offer",
+      "linkedinLabel": "LinkedIn",
+      "cvText": "Attach CV",
+      "cvErrorMessage": "CV is required",
+      "commentsLabel": "Additional comments",
+      "successMessage": "We have received your application"
+    }
+  }
+}

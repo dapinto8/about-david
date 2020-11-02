@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "about": "Nosotros",
+    "whatWeDo": "¿Qué hacemos?",
+    "withWho": "¿Con quién?",
+    "workWithUs": "Trabaja con nosotros",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "activities": "Actividades"
+  },
+  "footer": {
+    "europeOffices": "Oficinas Europa",
+    "europeAddress": "Av. Mare de Deu de Bellvitge - 3, 08907 L’Hospitalet de Llobregat- Barcelona, España",
+    "latamOffices": "Oficinas Latinoamérica",
+    "latamAddress": "Urb. San José de Tarbes - Torre BOD, Piso 16 Valencia, Venezuela",
+    "workWithUs": "Trabaja con nosostros",
+    "workWithUsLink": "Descubre cómo",
+    "instagram": "Visítanos",
+    "contact": "Contáctanos",
+    "rights": "Todos los derechos reservados"
+  },
+  "whatWeDo": {
+    "title": "¿QUÉ HACEMOS?",
+    "learnMore": "Conoce más"
+  },
+  "withWho": {
+    "title": "¿Qué hicimos?",
+    "duration": "Duración de proyecto",
+    "team": "Equipo dedicado",
+    "portfolio": "Descarga una muestra de nuestro portafolio digital"
+  },
+  "services": {
+    "title": "Servicios y Pricing",
+    "request": "Solicitar"
+  },
+  "form": {
+    "nameLabel": "Nombre y apellido",
+    "nameErrorMessage": "Nombre y apellido son requeridos",
+    "emailLabel": "Correo electrónico",
+    "emailErrorMessage": "Correo electrónico es requerido",
+    "emailPatternErrorMessage": "Por favor introduzca una dirección de correo electrónico válida",
+    "termsAndConditions": "He leído los términos y condiciones",
+    "termsAndConditionsErrorMessage": "Debes leer los términos y condiciones y marcar la casilla para continuar",
+    "submit": "Enviar"
+  },
+  "workWithUs": {
+    "applyForm": {
+      "title": "Aplicar a la oferta",
+      "linkedinLabel": "LinkedIn",
+      "cvText": "Adjuntar CV",
+      "cvErrorMessage": "CV es requerido",
+      "commentsLabel": "Comentarios adicionales",
+      "successMessage": "Hemos recibido tu postulación"
+    }
+  },
+  "request": {
+    "form": {
+      "positionLabel": "Cargo",
+      "companyLabel": "Empresa",
+      "commentsLabel": "¿Algo que quieras comentarnos?"
+    }
+  }
+}
