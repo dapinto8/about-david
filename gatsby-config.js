@@ -1,36 +1,66 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
+const isProduction = process.env.NODE_ENV === 'production';
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "About David",
+    siteUrl: 'https://www.example.com',
+    title: 'About David',
+    description: "David's website",
+    author: '@dapinto8'
+  },
+  flags: {
+    DEV_SSR: true,
+    FAST_DEV: true
   },
   plugins: [
     {
-      resolve: "gatsby-source-contentful",
+      resolve: 'gatsby-source-contentful',
       options: {
-        accessToken: "ZaA_L087usXPMzenCxlTPaaiCqvagE3sm6vQCrIhK-4",
-        spaceId: "0079axafqxyj",
-      },
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.CONTENTFUL_SPACE_ID
+      }
     },
-    "gatsby-plugin-sass",
-    "gatsby-plugin-gatsby-cloud",
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    'gatsby-plugin-sass',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
-        icon: "src/images/icon.png",
-      },
+        fonts: ['Nunito:300,400,500,700'],
+        display: 'swap'
+      }
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-gatsby-cloud',
+    'gatsby-plugin-react-helmet',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-plugin-react-helmet-canonical-urls',
       options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
+        siteUrl: 'https://www.example.com'
+      }
     },
-  ],
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/icon.png'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-image',
+      options: {
+        quality: 100
+      }
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/'
+      },
+      __key: 'images'
+    }
+  ]
 };
