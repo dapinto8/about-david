@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('swiper/swiper.min.css');
 
 html {
   font-size: 16px;
@@ -13,6 +14,10 @@ body {
   line-height: 1.5;
   color: #424242;
   background-color: #212121;
+}
+
+* {
+  transition: all 300ms ease-out;
 }
 
 @media (min-width: 768px) {

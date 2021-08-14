@@ -43,17 +43,21 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png'
+        icon: 'src/images/dp_orange.png'
       }
     },
     {
-      resolve: 'gatsby-plugin-image',
+      resolve: `gatsby-plugin-sharp`,
       options: {
-        quality: 100
+        defaults: {
+          formats: [`webp`],
+          placeholder: `dominantColor`,
+          quality: 100
+        }
       }
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    'gatsby-plugin-image',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

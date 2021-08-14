@@ -19,7 +19,7 @@ const Seo = ({ title, description = '', image = null, lang = 'en', meta = [] }) 
   );
 
   const metaDescription = description || siteMetadata.description;
-  const metaImage = image || 'images/icon.png';
+  const metaImage = image || 'images/dp_gray.png';
   const schemaMarkup = null;
   const schema = null;
 
