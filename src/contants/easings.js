@@ -1,0 +1,1 @@
+export const EASE_IN_OUT_EXPO = 'easeInOutExpo';

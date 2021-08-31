@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 @import url('swiper/swiper.min.css');
+@import url('kursor/dist/kursor.css');
+@import url(./variables.scss);
+@import url('./animations.scss');
+
+$color-primary: #EC7F00;
 
 html {
   font-size: 16px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
@@ -17,11 +22,48 @@ body {
 }
 
 * {
-  transition: all 300ms ease-out;
+  // cursor: none;
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 20px;
+  }
+}
+
+.no-scroll-bar {
+  scrollbar-width: 0px;
+  //  touch-action: pan-x;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.cursor {
+  position: fixed;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid $color-primary;
+  border-radius: 100%;
+  pointer-events: none;
+  // transition: all 200ms ease-out;
+  // transition-property: background-color, opacity, transform, mix-blend-mode;
+  mix-blend-mode: difference;
+
+  &--hidden {
+    opacity: 0;
+  }
+
+  &--link-hovered {
+    transform: translate(-50%, -50%) scale(1.25);
+    background-color: $color-primary;
+  }
+
+  &--clicked {
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: $color-primary;
   }
 }

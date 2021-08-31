@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { createContext, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 
-export const PageContext = React.createContext({});
+export const PageContext = createContext({});
 
 export const PageContextProvider = ({ props, children }) => {
   const { i18n } = useTranslation();
@@ -16,4 +16,4 @@ export const PageContextProvider = ({ props, children }) => {
   );
 };
 
-export const usePageContext = () => React.useContext(PageContext);
+export const usePageContext = () => useContext(PageContext);

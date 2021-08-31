@@ -1,0 +1,38 @@
+
+// Fade
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.fade-enter,
+.fade-exit {
+  transition: opacity 500ms;
+}
+
+// Block reveal
+.block-reveal-enter {
+  transform: translateX(0%);
+  max-width: 100%;
+}
+.block-reveal-enter-active {
+  transform: translateX(100%);
+  max-width: 100%;
+}
+.block-reveal-exit {
+  max-width: 100%;
+}
+.block-reveal-exit-active {
+  max-width: 100%;
+}
+.block-reveal-enter,
+.block-reveal-exit {
+  transition: all 500ms ease-out;
+}
